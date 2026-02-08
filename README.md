@@ -50,13 +50,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import cosBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-strided-special-cos-by@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-strided-special-cos-by/tags). For example,
+
+```javascript
 import cosBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-strided-special-cos-by@v0.2.3-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { ndarray } from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-strided-special-cos-by@v0.2.3-esm/index.mjs';
+import { ndarray } from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-strided-special-cos-by@esm/index.mjs';
 ```
 
 #### cosBy( N, x, strideX, y, strideY, clbk\[, thisArg] )
@@ -227,7 +232,7 @@ cosBy.ndarray( 3, x, 2, 1, y, -1, y.length-1, accessor );
 var uniform = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-uniform' ).factory;
 import filledarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled@esm/index.mjs';
 import filledarrayBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled-by@esm/index.mjs';
-import cosBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-strided-special-cos-by@v0.2.3-esm/index.mjs';
+import cosBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-strided-special-cos-by@esm/index.mjs';
 
 function accessor( v, i ) {
     if ( (i%3) === 0 ) {
